@@ -32,10 +32,61 @@ The method body, enclosed in braces `{}`, **houses the code that defines the met
 
 # Inheritance
 
+### Types of Inheritance
+
+> There are a total of five types of Inheritance in OOPS.
+
+1. Single Inheritance
+   - In single inheritance, a single subclass extends from a single superclass.
+     ![Screenshot of a diagram explaining the single inheritance](/images/inheritance/singleInheritance.png)
+   -
+2. Multilevel Inheritance
+   - In multilevel inheritance, a subclass extends from a superclass and then the same subclass acts as a superclass for another class. For example
+     ![Screenshot of a diagram explaining the Multilevel inheritance](/images/inheritance/multilevelInheritance.png)
+3. Hierarchical Inheritance
+   - In hierarchical inheritance, multiple subclasses extend from a single superclass. For example
+     ![Screenshot of a diagram explaining the Hierarchical inheritance](/images/inheritance/hierarchicalInheritance.png)
+4. Multiple Inheritance
+
+   - In multiple inheritance, a single subclass extends from multiple superclasses. For example
+     ![Screenshot of a diagram explaining the Multiple inheritance](/images/inheritance/multipleInheritance.png)
+   - > [!NOTE]
+     > Java doesn't support multiple inheritance. However, we can achieve multiple inheritance using interfaces.
+
+5. Hybrid Inheritance
+   - Hybrid inheritance is a combination of two or more types of inheritance. For example
+     ![Screenshot of a diagram explaining the Hybrid inheritance](/images/inheritance/hybridInheritance.png)
+     > Here, we have combined hierarchical and multiple inheritance to form a hybrid inheritance.
+
+### Advantages of Inheritance
+
+- Code reusability
+- We can achieve Polymorphism using Inheritance.
+
+### Disadvantages of Inheritance
+
+- The child class and the parent class are tightly coupled. Any changes in the parent class equally affect all the child classes.
+
+### Example Code
+
+![Screenshot of an example code of basic Inheritance](/images/inheritance/inheritanceCode.png)
+
+### Output
+
+> My name is Silvestre
+> I can eat
+
+In the above example, we have derived a subclass `Dog` from superclass `Animal`. Notice the statements
+
+> chapa.name = "Silvestre";  
+> chapa.eat();
+
+Here, `chapa` is an object of `Dog`. However, `name` and `eat()` are the members of the `Animal` class. Since `Dog` inherits the field and method from `Animal`, we are able to access the field and method using the object of the `Dog`.
+
 # Polymorphism
 
 # Abstraction
 
 # Encapsulation
 
-# #sources
+# Sources
